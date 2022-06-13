@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nicolas Fara Romero" />
+    <meta
+      name="keywords"
+      content="panaderia, pan, tortillas, dulces, masas, tortas"
+    />
+    <meta name="description" content="Pagina de una panaderia" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Panaderia Cocu</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              class="avatar"
+              src="../img/cocu_logo-450.png"
+              alt="Logo de la panaderia"
+              width="120px"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-bs-target="#itemsNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="itemsNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contactos.html"
+                  >Contactos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-5">
+      <section>
+        <h1 class="display-1 text-center">Contactos</h1>
+        <hr />
+        <article class="row">
+          <aside class="col-12 col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="nombreApellido">Nombre y apellido</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="nombreApellido"
+                  placeholder="Ej: Juan Perez"
+                  minlength="3"
+                  maxlength="50"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="telefono">Telefono</label>
+                <input
+                  class="form-control"
+                  type="tel"
+                  id="telefono"
+                  placeholder="Ej: 3815789451"
+                  minlength="3"
+                  maxlength="10"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email">Email</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  placeholder="Ej: juanperez@gmail.com"
+                  minlength="10"
+                  maxlength="80"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="consulta">Consulta</label>
+                <textarea
+                  class="form-control"
+                  id="consulta"
+                  rows="4"
+                  placeholder="Agregue su consulta de hasta 300 caracteres"
+                  maxlength="300"
+                  minlength="10"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+          </aside>
+          <aside class="col-12 col-md-6 mt-2">
+            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14240.408879082126!2d-65.2072018!3d-26.8367009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1654092496524!5m2!1ses-419!2sar" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </aside>
+        </article>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-secondary text-center py-4">
+      <section
+        class="container"
+      >
+      <div class="row justify-content-between">
+        <aside class="my-1 col-12 col-md-4">
+          <img src="../img/cocu_logo-450.png" alt="" width="120px" />
+        </aside>
+        <aside class="my-1 col-12 col-md-4">
+          <h4 class="text-start">Horarios de atencion:</h4>
+          <ol class="text-start list-unstyled">
+            <li>Lunes a viernes: 09hs-18hs</li>
+            <li>Sabados, domingos y feriados: 09hs-14hs</li>
+          </ol>
+        </aside>
+        <aside class="my-1 col-12 col-md-4">
+          <h4 class="text-start">Siguenos en nuestras redes:</h4>
+        </aside>
+      </div>
+      </section>
+    </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

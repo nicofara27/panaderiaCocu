@@ -1,0 +1,13 @@
+.nuestrosSabores__img:hover {
+    filter: drop-shadow(0 0 1rem rgb(0, 140, 255));
+    transition: .4s;
+}
+
+@media all and (max-width: 767px) {
+    .img-banner-responsive {
+        object-fit: cover;
+        height: 250px;
+        
+    }
+}
+
